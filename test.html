@@ -22,13 +22,13 @@
             height: 100vh;
             width: 100%;
             display: flex;
-            background-color: #F5F5FB;
         }
 
         .name {
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-between;
+            justify-content: space-around;
+            margin-top: 10px;
         }
 
         .author {
@@ -36,20 +36,31 @@
         }
 
         nav {
+            padding: 5px;
             width: 20%;
             height: 100%;
             display: flex;
             flex-flow: column wrap;
-            justify-content: space-between;
         }
 
         aside {
-            width: 20%;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-evenly;
+            width: 30%;
             height: 100%;
+            padding: 5px;
+            gap: 15px;
+
         }
 
         main {
             width: 100%;
+            background-color: #F5F5FB;
+            padding: 20px;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
         }
 
         .logo {
@@ -60,24 +71,38 @@
         }
 
         .links {
-            height: ;
             display: flex;
-            flex-flow: column;
+            flex-flow: column wrap;
             gap: 10px;
-            margin-left: 50%;
+            margin: 35%;
+            align-content: center;
         }
 
         .img {
-            background-color: #C4C4C4;
-            width: 100px;
-            height: 100px;
-            margin-left: 35%;
-            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            flex: 1;
+            align-items: center;
         }
 
+        .div-img {
+            background-color: #C4C4C4;
+            width: 70px;
+            height: 70px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+
         header {
+            height: 20%;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
+        }
+
+        .title {
+            margin-top: 10px;
         }
 
         .tag {
@@ -85,15 +110,47 @@
             justify-content: space-between;
             margin-left: 20px;
             margin-right: 20px;
+            height: 10%;
 
         }
 
         .div-tag {
             display: flex;
-            gap: 10px;
+            gap: 30px;
         }
 
+        .content {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 10px;
+            justify-content: flex-start;
+        }
 
+        .fig {
+            background-color: #C4C4C4;
+            height: 200px;
+            width: 100%;
+            border-radius: 5px;
+            
+        }
+
+        .box {
+            background-color: #C4C4C4;
+            height: 100px;
+            width: 49%;
+            border-radius: 5px;
+        }
+
+        .articles {
+            display: flex;
+            flex-flow: column wrap;
+            gap: 5px;
+        }
+
+        .div-articles {
+            display: flex;
+            justify-content: space-around;
+        }
     </style>
 </head>
 <body>
@@ -109,13 +166,13 @@
             <a href="#">Link</a>
             <a href="#">Link</a>
         </section>
-        <section>
-            <div class="img"></div>
+        <section class="img">
+            <div class="div-img"></div>
         </section>
     </nav>
     <main>
         <header>
-            <h2>Title Title Title Title Title Title</h2>
+            <h2 class="title">Title Title Title Title Title Title</h2>
             <div class="logo"></div>
         </header>
         <section class="tag">
@@ -128,10 +185,10 @@
                 <p>tag</p>
             </div>
         </section>
-        <section>
-            <div></div>
-            <div></div>
-            <div></div>
+        <section class="content">
+            <div class="fig"></div>
+            <div class="box"></div>
+            <div class="box"></div>
         </section>
     </main>
     <aside>
@@ -140,29 +197,41 @@
             <div class="author">Name</div>
         </section>
         <section>
-            <p>title</p>
+            <h1>Categoria</h1>
+        </section>
+        <section class="articles">
+            <div class="div-articles">
+                <div class="logo"></div>
+                <div class="author">Title</div>
+            </div>
+            <div class="div-articles">
+                <div class="logo"></div>
+                <div class="author">Title</div>
+            </div>
+            <div class="div-articles">
+                <div class="logo"></div>
+                <div class="author">Title</div>
+            </div>
         </section>
         <section>
-            <div></div>
-            <p></p>
-            <div></div>
-            <p></p>
-            <div></div>
-            <p></p>
+            <h1>Categoria</h1>
         </section>
-        <section>
-            <p>title</p>
+        <section class="articles">
+            <div class="div-articles">
+                <div class="logo"></div>
+                <div class="author">Title</div>
+            </div>
+            <div class="div-articles">
+                <div class="logo"></div>
+                <div class="author">Title</div>
+            </div>
+            <div class="div-articles">
+                <div class="logo"></div>
+                <div class="author">Title</div>
+            </div>
         </section>
-        <section>
-            <div></div>
-            <p></p>
-            <div></div>
-            <p></p>
-            <div></div>
-            <p></p>
-        </section>
-        <section>
-            <div></div> 
+        <section class="img">
+            <div class="div-img"></div> 
         </section>
 
     </aside>
